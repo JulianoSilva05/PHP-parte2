@@ -81,3 +81,11 @@ foreach ($contasCorrentes as $cpf => $conta) { //as CHAVE, e para ininformar que
 /**Ate agora, temos um monte de Funções dentro de um unico arquivo.
  * É interessante separar tudo em arquivos diferentes.
  */
+
+ 
+// Para saber mais: Strings
+// PRÓXIMA ATIVIDADE
+
+// Strings em PHP têm algumas particularidades mas também são muito poderosas. Podemos realizar operações interessantes dentro de nossos textos.
+
+// Se quiser mais detalhes sobre como funcionam as strings e como manipulá-las de forma um pouco mais complexa, você pode conferir a documentação sobre elas.
