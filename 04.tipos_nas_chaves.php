@@ -8,7 +8,7 @@ $array = [
     true => "d"
 ];
 
-foreach($array as $item){
+foreach ($array as $item) {
     echo $item;
 }
 /*

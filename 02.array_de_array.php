@@ -18,7 +18,9 @@ $conta3 = [
     "saldo" => 3000
 ];
 
-$contasCorrentes = [$conta1, $conta2,$conta3];
-for ($i = 0; $i < count($contasCorrentes); $i++){
-    echo $contasCorrentes[$i]["titular"]." - ".$contasCorrentes[$i]["saldo"].PHP_EOL;
+$contasCorrentes = [$conta1, $conta2, $conta3];
+for ($i = 0; $i < count($contasCorrentes); $i++) {
+    echo $contasCorrentes[$i]["titular"] . " - " . $contasCorrentes[$i]["saldo"] . PHP_EOL;
 }
+
+echo $conta2["titular"];

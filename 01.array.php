@@ -2,7 +2,7 @@
 //Array é uma forma de agrupar dados em uma unica variavel
 $id = [0,1,2,3,4,5,6];
 //adicionar um id e idade
-$id[] = 8;
+$id[] = 7;
 $idadeList = [21, 23, 19, 25, 30, 41, 18];
 //adicionando uma idade
 $idadeList[] = 55;
@@ -12,6 +12,7 @@ $nomes[] = "Fernando";
 for ($i=0; $i < count($id); $i++){
     echo $id[$i]. " \t".$nomes[$i]." \t ".$idadeList[$i].PHP_EOL;
 }
+
 /*
 Nessa aula, aprendemos sobre a estrutura de dados Array. Vimos que um Array:
 
