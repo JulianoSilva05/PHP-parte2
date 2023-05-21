@@ -8,8 +8,7 @@ require "11_funcoes.php";
 //E-WARNING - Não executa
 //E_NOTICE - ENCONTRA O ERRO E CONSEGUE EXECUTAR
 // E_ERROR - Verifica o erro 
-//EXEMPLO:
-echo $contasCorrentes[390245637812]["saldo"];
+
 
 
 $contasCorrentes = [
