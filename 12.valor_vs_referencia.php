@@ -11,9 +11,25 @@ $contasCorrentes = [
 //FUNÇÃO PARA COLOCAR LETRAS MAIUSCULAS
 letrasMaiusculas($contasCorrentes[18564927812]);
 
+// foreach ($contasCorrentes as $cpf => $conta) { 
+//     exibeMensagem(
+//             "$cpf {$conta["titular"]} {$conta["saldo"]}"
+//         );
+// }
+
 foreach ($contasCorrentes as $cpf => $conta) { 
+    list("titular" => $titular, "saldo" => $saldo) = $conta;//podemos criar variaveis para receber os valores
+    //Porem, assim como no array, na lista tem como deixar o código mais limpo, veja abaixo.
     exibeMensagem(
-            "$cpf {$conta["titular"]} {$conta["saldo"]}"
+            "$cpf \t $titular \t $saldo"
+        );
+}
+
+/**Código limpo */
+foreach ($contasCorrentes as $cpf => $conta) { 
+    ["titular" => $titular, "saldo" => $saldo] = $conta;
+    exibeMensagem(
+            "$cpf \t $titular \t $saldo"
         );
 }
 

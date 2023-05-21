@@ -5,11 +5,7 @@ function tracos() //Subrotina não tem retorno
 {
     echo "***************";
 }
-/**
- * Summary of exibeMensagem
- * @param mixed $mensagem
- * @return void
- */
+
 function exibeMensagem($mensagem) //Subrotina não tem retorno
 {
     /**Podemos ou não colocar uma parametro */
