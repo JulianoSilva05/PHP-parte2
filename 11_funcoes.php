@@ -39,4 +39,14 @@ function depositar(array $conta, float $valorADepositar):array
     return $conta;
 }
 
+// function letrasMaiusculas(array $conta)//Se usarmos somente $conta, vamos criar uma copia da conta
+function letrasMaiusculas(array &$conta)//colocando o &$conta, não criamos uma copia, mudamos por referencia 
+{
+    $conta["titular"] = mb_strtoupper($conta["titular"]);
+    /**Porem, para habilitar essa biblioteca que possui o "mb_strtoupper temos que ir na pasta que baixamso do PHP>>php.ini > abrir com editor de texto e procurar (Ctrl + F) mbstring e remover o ; 
+     * e depois pesquisa extension_dir = "ext" e descomenta a linha 
+     * ; On windows:
+        extension_dir = "ext"
+      */
+}
 exibeMensagem("este é o aqruivo de funçoes");
