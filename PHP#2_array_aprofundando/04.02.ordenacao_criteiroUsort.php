@@ -23,9 +23,8 @@ function ordenaNotas(array $nota1, array $nota2):int{
     if ($nota2["nota"] > $nota1["nota"]){
         return 1;
     }
-
-
         return 0;
 };
 usort(array:$notas, callback:"ordenaNotas");//ordena do maior para o menor
+//posso passar uma função como parametro no PHP, por isso usamos o CALLBACK
 var_dump($notas);
