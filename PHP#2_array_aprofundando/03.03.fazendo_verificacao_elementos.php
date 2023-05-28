@@ -6,7 +6,7 @@ $notas = [
     'João' => 8,
     'Ana' => 10,
     'Roberto' => 7,
-    'Maria' => 6
+    'Maria' => 10
 ];
 
 krsort(array:$notas);
@@ -61,6 +61,31 @@ var_dump(in_array(10,$notas));
 
 echo "Alguém tirou 6?".PHP_EOL;
 var_dump(in_array(6,$notas));
+
+//Quero encontrar quem tirou 10
+echo "Quem tirou 10?".PHP_EOL;
+//Preciso buscar o indice que tem o valor igual a 10
+//Podemos usar o For para buscar o indice que tenha o valor 10
+//Mas o PHP tem uma funcionalidade melhor (array_search)
+echo array_search(10, $notas, true).PHP_EOL; //vai retornar o ultimo aluno que tirou 10
+
+/**Se ue quiser todos que tiraram 10 */
+echo "Quais tiraram 10?".PHP_EOL;
+$alunos = [
+    ['nome' => 'Carlos', 'nota' => 7.4],
+    ['nome' => 'Ana', 'nota' => 10],
+    ['nome' => 'Rodrigo', 'nota' => 10],
+    ['nome' => 'Rebeca', 'nota' => 6.8]
+];
+
+$alunosComNota10 = array_map(fn($aluno) => $aluno['nome'],
+    array_filter($alunos, fn($aluno) => $aluno['nota'] === 10)
+);
+
+foreach ($alunosComNota10 as $aluno) {
+    echo $aluno .PHP_EOL;
+}
+
 
 //array_key_exists = verifica se a chave existe
 //in_array = verifica se o valor existe
