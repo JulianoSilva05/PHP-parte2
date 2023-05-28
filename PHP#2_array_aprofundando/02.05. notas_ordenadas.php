@@ -30,6 +30,7 @@ ksort(array:$notas_nome);
 var_dump($notas_nome);
 
 //ordenar de forma descrescete pela chave
+echo "Exibindo o for ".PHP_EOL;
 echo "Notas nomes ordem descrescente alfabetica".PHP_EOL;
 krsort(array:$notas_nome);
 var_dump($notas_nome);

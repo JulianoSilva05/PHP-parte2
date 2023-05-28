@@ -1,12 +1,8 @@
 <?php
 
-$notas = [
-    'Ana' => 10,
-    'João' => 8,
-    'Maria' => 9,
-    'Roberto' => 7,
-    'Vinicius' =>6
+$array = [
+    'chave1' => 'valor 1',
+    'chave2' => 2,
+    'chave3' => null,
 ];
-
-arsort(array: $notas);
-var_dump($notas);
+echo (array_key_exists('chave3', $array));
