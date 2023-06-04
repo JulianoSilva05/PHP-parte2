@@ -1,7 +1,7 @@
 <?php
+$array1 = [1, 2];
+$array2 = [3, 4];
 
-$value = 'car';
-$result = filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE);
-
-?>
-
+$combinado = [...$array1, ...$array2];
+print_r($combinado);
+// Saída: Array ( [0] => 1 [1] => 2 [2] => 3 [3] => 4 )
