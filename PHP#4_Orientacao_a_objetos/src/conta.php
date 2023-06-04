@@ -1,11 +1,6 @@
 <?php
-//este arquivo servirá para criar contas
-function criarConta(string $cpf, string $nomeTitular, float $saldo): array //essa função retorna valor a partir dos atributos
-{
-    return[
-        $cpf =>[
-            'titula' => $nomeTitular,
-            'saldo' => $saldo,
-        ]
-     ];
+
+//esse arquivo servirá como uma forma de bolo = Class - Isso será um padrão para criação de contas
+class Conta{
+    //definir dados da cconta
 }
