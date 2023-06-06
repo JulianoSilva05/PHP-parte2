@@ -19,4 +19,4 @@ echo "Digite a nota4 do aluno: ";
 $nota4 = readline();
 
 
-calcularMedia("Juliano",10,2,5,10);
+calcularMedia($nome, $nota1, $nota2, $nota3, $nota4);
