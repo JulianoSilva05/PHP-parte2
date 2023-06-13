@@ -13,3 +13,14 @@
  * A classe contém o molde do objeto, ou seja, seus métodos e suas propriedades;
  * Podemos mudar o valor para cada objeto criado, mas ele parte do que a classe impõe
  */
+
+ //Declarando uma classe
+ /**
+  * Para iniciar uma classe vamos precisa da palavra reservada class, e também dar um nome para a classe;
+  * Por convenção, a inicial do nome é sempre em maiúscula, ex: User;
+  * Como é um bloco de código, a classe é envolvida por {};
+  * Exemplo:
+  * class User{
+  *
+  *}
+  */
