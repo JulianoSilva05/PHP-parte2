@@ -37,3 +37,10 @@ MinhaClasse::metodoEstatico();
 
 *É importante ter em mente que propriedades e métodos estáticos são globais para a classe e podem ser acessados de qualquer lugar no código, mesmo sem instanciar a classe. Portanto, é recomendável usá-los com cautela e apenas quando faz sentido lógico compartilhar determinada informação entre todas as instâncias da classe.
  */
+
+ /**
+  * PORQUE USAR ESTATICO:
+  *Imagine que você tem uma classe Alunos.
+  *Todos os anos dia 25 o senai deseja enviar um email desenjando Boas FEstas aos alunos. criando o metodo desejarFelizFestas() com o metodo static não precisa atribuir a nenhum objeto.
+  *POREM!!! não pode ser usado com frequencia, pois deixa o codigo menos flexível e mais dificil de testar.
+  */
