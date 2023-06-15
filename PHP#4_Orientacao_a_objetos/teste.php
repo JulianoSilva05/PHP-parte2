@@ -1,24 +1,33 @@
 <?php
-$vetor = array(1, 2, 3, 4);
-foreach ($vetor as $v) {
-    print "O valor atual do vetor é $v".PHP_EOL;
-}
-$a = [
-    "um" => 1, 
-    "dois" => 2, 
-    "tres" => 3
-    ];
-
-foreach ($a as $chave => $valor) {
-    print "\$a[$chave] => $valor".PHP_EOL;
-}
-
-$pessoa = [
-    "123456789-10" => "Juliano",
-    "234567891-11" => "Maria",
-    "345678912-12" => "Pedro"
-];
-
-foreach($pessoa as $conta => $indice){
-    echo "$conta => $indice".PHP_EOL;
-}
+class Retangulo {
+    private $largura;
+    private $altura;
+  
+    public function __construct($largura, $altura) {
+      $this->largura = $largura;
+      $this->altura = $altura;
+    }
+  
+    public function calcularArea() {
+      return $this->largura * $this->altura;
+    }
+  
+    public function calcularPerimetro() {
+      return 2 * ($this->largura + $this->altura);
+    }
+  
+    public function getLargura() {
+      return $this->largura;
+    }
+  
+    public function getAltura() {
+      return $this->altura;
+    }
+  }
+  
+  // Exemplo de uso da classe
+  
+  $retangulo = new Retangulo(5, 10);
+  echo "Área do retângulo: " . $retangulo->calcularArea() . "<br>";
+  echo "Perímetro do retângulo: " . $retangulo->calcularPerimetro() . "<br>";
+  

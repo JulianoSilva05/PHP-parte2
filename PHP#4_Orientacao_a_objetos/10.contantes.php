@@ -10,7 +10,6 @@ class Gato{
     public const OLHOS = 2;
     public const PATAS = 4;
     public const RABO = true;
-
     //para acessar uma constante em metodos a sintaxe muda
     function mostrarConstante(){
         echo "PATAS: ".self::PATAS.PHP_EOL;
@@ -20,6 +19,8 @@ class Gato{
     }
 
 }
+
+
 $mimi = new Gato;
 echo $mimi::OLHOS.PHP_EOL; //sintaxe para acessar constantes é composta por ::
 echo $mimi::PATAS.PHP_EOL;
